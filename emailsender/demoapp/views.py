@@ -12,13 +12,14 @@ def sendanemail(request):
         to = request.POST.get('toemail')
         content = request.POST.get('content')
         # print(to,content)
-        EmailMessage(
+        email = EmailMessage(
             "Python (Selenium) Assignment- Aditya Goswami",
             content,
             settings.EMAIL_HOST_USER,
             [to],
-            cc=[os.getenv("EMAIL_CC")],
+            cc=[os.getenv("EMAIL_CC")]
         )
+        email.send()
         return render(
             request,
             'email.html',
