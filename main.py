@@ -28,3 +28,5 @@ for xpath, key in fields:
 
 code = driver.find_element(By.XPATH, value="//*[@id='mG61Hd']/div[2]/div/div[2]/div[8]/div/div/div[2]/div/div[1]/div/div[1]/input")
 code.send_keys(driver.find_element(By.XPATH, value="//*[@id='i30']/span[1]/b").text)
+
+submit = driver.find_element(By.XPATH, value="//*[@id='mG61Hd']/div[2]/div/div[3]/div[1]/div[1]/div/span/span").click()
