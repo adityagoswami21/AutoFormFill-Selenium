@@ -66,14 +66,24 @@ This project is a Python script that automates the process of filling out a Goog
 
    The script will open the specified Google Form, fill in the details using the values from the `.env` file, and submit the form.
 
+## Output after successful deployment of code
+![Screenshot 2024-05-31 154712.png](Screenshot%202024-05-31%20154712.png)
+## Challenges Faced
+
+- **XPath Selection:** Ensuring that the correct XPath expressions were used for each form field, as these can change if the form structure is updated.
+- **Dynamic Content Loading:** Handling the dynamic loading of form elements, which required adding appropriate delays (`time.sleep`) to ensure that elements were fully loaded before attempting to interact with them.
+- **Environment Variable Management:** Securely managing and accessing environment variables using `python-dotenv` to keep sensitive information out of the script.
+- **Browser Driver Configuration:** Ensuring compatibility between the version of ChromeDriver and the installed version of Google Chrome, and correctly configuring ChromeDriver in the PATH.
+
 ## Note
 
 - Ensure that the XPaths used in the script match the actual XPaths of the form fields in the Google Form. If the form structure changes, you may need to update the XPaths accordingly.
 
-## Output of our code
-![Screenshot 2024-05-31 154712.png](Screenshot%202024-05-31%20154712.png))
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Acknowledgments
 
 - [Selenium](https://www.selenium.dev/)
 - [Python Dotenv](https://pypi.org/project/python-dotenv/)
-
