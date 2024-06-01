@@ -66,6 +66,22 @@ The HTML template that contains the form for inputting the recipient's email add
 
 ## Filling the form can be depicted as follows:
 ![Screenshot 2024-05-31 191827.png](Screenshot%202024-05-31%20191827.png)
+
+## Challenges Faced
+#### Email Configuration:
+Configuring the email settings correctly was a challenge, particularly ensuring compatibility with different email service providers and handling secure transmission of email credentials.
+
+#### Environment Variables Management:
+Managing sensitive information securely using environment variables required careful handling, especially ensuring that the .env file is not included in version control and properly loaded into the Django settings.
+
+#### Form Handling:
+Creating a user-friendly form that accurately captures the required data and integrates seamlessly with Django's form handling was a crucial aspect. Ensuring that form validation and error handling worked correctly required careful implementation.
+
+#### Debugging and Testing:
+Ensuring the email sending functionality worked as expected involved rigorous testing and debugging. Handling edge cases, such as invalid email addresses and server errors, was essential to make the application robust.
+
+#### Security Considerations:
+Ensuring the application is secure, especially regarding email injection attacks and securing the communication between the server and the email provider, was a significant challenge that required careful planning and implementation.
 ## Security
 
 - **Environment Variables:** Sensitive information such as email credentials are stored in the `.env` file and loaded into `settings.py`. This keeps the credentials secure and out of the main codebase.
