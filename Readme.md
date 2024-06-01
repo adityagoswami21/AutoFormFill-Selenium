@@ -79,10 +79,6 @@ This project is a Python script that automates the process of filling out a Goog
 
 - Ensure that the XPaths used in the script match the actual XPaths of the form fields in the Google Form. If the form structure changes, you may need to update the XPaths accordingly.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [Selenium](https://www.selenium.dev/)
